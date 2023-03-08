@@ -1,16 +1,3 @@
-// import { createStore } from '@stencil/store';
-
-// const { state, onChange } = createStore({
-//   lang: 'es',
-  
-// });
-// onChange('lang', async value => {
-//   console.log('STORE `lang` changed:', value);
-// });
-
-// export default state;
-
-
 import { createStore } from '@stencil/store';
 
 const { state, onChange } = createStore({
