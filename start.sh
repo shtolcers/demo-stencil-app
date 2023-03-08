@@ -42,6 +42,6 @@ if $install; then
     npm install && npm run build
 fi
 
-# echo "Serve both components..."
-# cd ..
-# npx http-server
+# echo "Serve all the components..."
+cd ..
+npx http-server
