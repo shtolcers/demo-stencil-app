@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="module" src="./test-component/dist/test-component/test-component.esm.js"></script>
+    <script type="module" src="./test-component1/dist/test-component1/test-component1.esm.js"></script>
+    <!-- <script type="module" >
+        import  { defineCustomElements } from './test-component/loader/index.es2017.js'
+        defineCustomElements();
+    </script> -->
+
+    <script type="module">
+        //default
+        // import { defineCustomElement } from "./test-component2/dist/components/my-component2.js";
+        // defineCustomElement();
+
+        //auto-define-custom-elements
+        import "./test-component2/dist/components/my-component2.js";
+
+        //bundle
+        // import { defineCustomElements }from "./test-component2/dist/components/index.js";
+        // defineCustomElements();
+
+        
+        //single-export-module
+        // import * as tc from "./test-component2/dist/components/index.js";
+        // tc.defineCustomElementMyComponent2()
+    </script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <b>`dist` build</b>
+    <my-component></my-component>
+
+    <br />
+    <b>`dist` build (component uses local @State)</b>
+    <my-component1></my-component1>
+
+    <br /><br /><br /><br />
+    <b>`dist-custom-elements` build</b>
+    <my-component2></my-component2>
+</body>
+
+</html>
