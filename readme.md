@@ -5,17 +5,17 @@ The purpose of the demo is to demonstrate the inconsistent behavior of StencilJs
 The project contains 3 completely separate components. All 3 are almost identical. Main differences:
 
 1. Built with output target's type set to `dist`. The component is similar to one in the StencilJs guide: <https://stenciljs.com/docs/stencil-store>
-2. Identical 2 no.2, except component uses local state variable.
-3. Identical to no. 3, except the output target's type is set to `dist-custom-elements`
+2. Identical to no.2, except the component uses a local state variable.
+3. Identical to no.3, except the output target's type is set to `dist-custom-elements`
 
 # Running the project
 
-To run the project: `./start.sh -ci' (the logic of the start script is self-explanatory).
+To run the project: `./start.sh -ci` (the logic of the start script is self-explanatory).
 Alternatively, one could manually build each component and serve the top-level `index.html` file.
 
-# Expected behavior
+# Expected behavior when running the project
 
-One should observe that only the second component reacts to state changes and re-renders accordingly.
+Out of three only the second component reacts to state changes and re-renders accordingly.
 
 # Preferrable behavior
 
